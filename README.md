@@ -70,3 +70,10 @@ __weak __typeof(self) weakSelf = self;
     weakSelf.fullScreenImageView.image = image;
 }];
 ```
+
+---
+
+#### Contacts
+
+[Check out](https://github.com/Alterplay) all Alterplay's GitHub projects.
+[Email us](mailto:hello@alterplay.com?subject=From%20GitHub%20APPhotolibrary) with other ideas and projects.
