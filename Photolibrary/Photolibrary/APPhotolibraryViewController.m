@@ -46,8 +46,7 @@
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ALAsset *asset = [self collectionItemAtIndexPath:indexPath];
-    [self performSegueWithIdentifier:NSStringFromClass(APPhotoViewController.class)
-                              sender:asset];
+    [self performSegueWithIdentifier:NSStringFromClass(APPhotoViewController.class) sender:asset];
 }
 
 #pragma mark - segue

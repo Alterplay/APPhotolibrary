@@ -28,8 +28,8 @@
 + (BOOL)isAuthorized
 {
     ALAuthorizationStatus status = [ALAssetsLibrary authorizationStatus];
-    return status == ALAuthorizationStatusAuthorized || status ==
-           ALAuthorizationStatusNotDetermined;
+    return (status == ALAuthorizationStatusAuthorized ||
+            status == ALAuthorizationStatusNotDetermined);
 }
 
 - (void)loadPhotosAsynchronously:(void (^)(NSArray *assets, NSError *error))callbackBlock
@@ -61,14 +61,14 @@
 
 #pragma mark - private
 
-- (NSComparator)sortComparator
+- (APAssetComparator)sortComparator
 {
     if (!_sortComparator)
     {
-        _sortComparator = ^NSComparisonResult(id obj1, id obj2)
+        _sortComparator = ^NSComparisonResult(ALAsset *asset1, ALAsset *asset2)
         {
-            NSDate *date1 = [obj1 valueForProperty:ALAssetPropertyDate];
-            NSDate *date2 = [obj2 valueForProperty:ALAssetPropertyDate];
+            NSDate *date1 = [asset1 valueForProperty:ALAssetPropertyDate];
+            NSDate *date2 = [asset2 valueForProperty:ALAssetPropertyDate];
             return [date1 compare:date2];
         };
     }

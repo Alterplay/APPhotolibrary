@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class ALAsset;
 @class ALAssetsLibrary;
+
+typedef NSComparisonResult (^APAssetComparator)(ALAsset *asset1, ALAsset *asset2);
 
 @interface APPhotolibrary : NSObject
 {
@@ -16,7 +19,7 @@
 }
 
 @property (nonatomic, assign) BOOL sortAscending;
-@property (nonatomic, copy) NSComparator sortComparator;
+@property (nonatomic, copy) APAssetComparator sortComparator;
 
 + (BOOL)isAuthorized;
 - (void)loadPhotosAsynchronously:(void (^)(NSArray *assets, NSError *error))callbackBlock;
