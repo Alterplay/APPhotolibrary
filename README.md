@@ -1,10 +1,7 @@
-APPhotolibrary
-============
+<img src="https://dl.dropboxusercontent.com/u/2334198/APPhotolibrary-git-teaser.png">
 
-#### About
 APPhotolibrary is a wrapper on [ALAssetsLibrary](https://developer.apple.com/library/ios/documentation/AssetsLibrary/Reference/ALAssetsLibrary_Class/Reference/Reference.html) and a category for [ALAsset](https://developer.apple.com/library/ios/documentation/AssetsLibrary/Reference/ALAsset_Class/Reference/Reference.html)
 
----
 
 #### Features
 * Asynchronous loading of photo library assets
@@ -15,7 +12,6 @@ APPhotolibrary is a wrapper on [ALAssetsLibrary](https://developer.apple.com/lib
 #### Installation
 Add `APPhotolibrary` pod to Podfile
 
----
 
 #### Using
 
@@ -36,8 +32,6 @@ APPhotolibrary *photolibrary = [[APPhotolibrary alloc] init];
 
 ```
 
----
-
 ###### Sort photos
 ```objective-c
 photolibrary.sortAscending = YES;
@@ -49,7 +43,6 @@ photolibrary.sortComparator = ^NSComparisonResult(ALAsset *asset1, ALAsset *asse
 
 > ### Default sort is by date
 
----
 
 ###### Get photo from asset
 ```objective-c
@@ -71,9 +64,7 @@ __weak __typeof(self) weakSelf = self;
 }];
 ```
 
----
 
-#### Contacts
-
+=======================
 [Check out](https://github.com/Alterplay) all Alterplay's GitHub projects.
 [Email us](mailto:hello@alterplay.com?subject=From%20GitHub%20APPhotolibrary) with other ideas and projects.
