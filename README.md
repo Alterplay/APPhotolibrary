@@ -64,6 +64,7 @@ __weak __typeof(self) weakSelf = self;
 }];
 ```
 
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/b44e965f18d06c561e4dd22212647d65 "githalytics.com")](http://githalytics.com/Alterplay/APPhotolibrary)
 
 =======================
 [Check out](https://github.com/Alterplay) all Alterplay's GitHub projects.
