@@ -18,7 +18,7 @@
     self = [super init];
     if (self)
     {
-        library = [[ALAssetsLibrary alloc] init];
+        self.assetLibrary = [[ALAssetsLibrary alloc] init];
     }
     return self;
 }
@@ -38,7 +38,7 @@
     NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@""
                                                                  ascending:self.sortAscending
                                                                 comparator:self.sortComparator];
-    [library enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos
+    [self.assetLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos
                            usingBlock:^(ALAssetsGroup *group, BOOL *stop)
     {
         [assets addObjectsFromArray:group.assets];

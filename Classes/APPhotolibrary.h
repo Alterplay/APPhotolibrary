@@ -14,12 +14,10 @@
 typedef NSComparisonResult (^APAssetComparator)(ALAsset *asset1, ALAsset *asset2);
 
 @interface APPhotolibrary : NSObject
-{
-    ALAssetsLibrary *library;
-}
 
 @property (nonatomic, assign) BOOL sortAscending;
 @property (nonatomic, copy) APAssetComparator sortComparator;
+@property (nonatomic, strong) ALAssetsLibrary *assetLibrary;
 
 + (BOOL)isAuthorized;
 - (void)loadPhotosAsynchronously:(void (^)(NSArray *assets, NSError *error))callbackBlock;
