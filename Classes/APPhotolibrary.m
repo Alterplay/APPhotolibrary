@@ -9,6 +9,10 @@
 #import "APPhotolibrary.h"
 #import "ALAssetsGroup+Assets.h"
 
+@interface APPhotolibrary ()
+@property (nonatomic, strong) ALAssetsLibrary *assetLibrary;
+@end
+
 @implementation APPhotolibrary
 
 #pragma mark - life cycle

@@ -17,7 +17,7 @@ typedef NSComparisonResult (^APAssetComparator)(ALAsset *asset1, ALAsset *asset2
 
 @property (nonatomic, assign) BOOL sortAscending;
 @property (nonatomic, copy) APAssetComparator sortComparator;
-@property (nonatomic, strong) ALAssetsLibrary *assetLibrary;
+@property (nonatomic, strong, readonly) ALAssetsLibrary *assetLibrary;
 
 + (BOOL)isAuthorized;
 - (void)loadPhotosAsynchronously:(void (^)(NSArray *assets, NSError *error))callbackBlock;
