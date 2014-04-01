@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "APPhotolibrary"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Easy access to photo album on iOS"
   s.homepage     = "https://github.com/Alterplay/APPhotolibrary"
   s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
