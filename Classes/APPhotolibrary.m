@@ -9,10 +9,6 @@
 #import "APPhotolibrary.h"
 #import "ALAssetsGroup+Assets.h"
 
-@interface APPhotolibrary ()
-@property (nonatomic, strong) ALAssetsLibrary *assetLibrary;
-@end
-
 @implementation APPhotolibrary
 
 #pragma mark - life cycle
@@ -22,7 +18,7 @@
     self = [super init];
     if (self)
     {
-        self.assetLibrary = [[ALAssetsLibrary alloc] init];
+        _assetLibrary = [[ALAssetsLibrary alloc] init];
     }
     return self;
 }
