@@ -64,6 +64,14 @@ __weak __typeof(self) weakSelf = self;
 }];
 ```
 
+#### History
+
+**Version 0.0.2**
+* Added external access to assets library. Thanks to [Bob Spryn](https://github.com/sprynmr).
+
+**Version 0.0.1**
+* First release
+
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/b44e965f18d06c561e4dd22212647d65 "githalytics.com")](http://githalytics.com/Alterplay/APPhotolibrary)
 
 =======================
